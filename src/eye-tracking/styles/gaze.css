@@ -1,0 +1,217 @@
+.calibration-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calibration-background {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.calibration-point {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.calibration-point-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calibration-point-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+  animation: calibration-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes calibration-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.calibration-point-click-count {
+  position: absolute;
+  top: 100%;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.calibration-progress {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 10002;
+}
+
+.calibration-progress-bar {
+  height: 6px;
+  background: linear-gradient(90deg, #f472b6, #ec4899);
+  border-radius: 3px;
+  transition: width 300ms ease;
+}
+
+.calibration-progress-text {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.calibration-instructions {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 10002;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.calibration-instructions h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+  color: #1e1b16;
+}
+
+.calibration-instructions p {
+  margin: 0 0 1rem;
+  color: #625036;
+  font-size: 0.95rem;
+}
+
+.calibration-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 999rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+}
+
+.calibration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(236, 72, 153, 0.4);
+}
+
+.calibration-button:active {
+  transform: translateY(0);
+}
+
+.gaze-overlay-canvas {
+  touch-action: none;
+}
+
+.debug-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  z-index: 9998;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #e0e7ff;
+  max-width: 320px;
+}
+
+.debug-panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.debug-panel-content {
+  padding: 12px 16px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.debug-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.debug-stat:last-child {
+  border-bottom: none;
+}
+
+.debug-label {
+  color: #94a3b8;
+}
+
+.debug-value {
+  color: #fbbf24;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.debug-value.status-active {
+  color: #4ade80;
+}
+
+.debug-value.status-inactive {
+  color: #ef4444;
+}
+
+@media (max-width: 640px) {
+  .debug-panel {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    max-width: unset;
+    font-size: 0.75rem;
+  }
+
+  .calibration-instructions {
+    max-width: 90%;
+  }
+}

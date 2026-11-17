@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "clip": "reading.mp4",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "durationSec": 12.8,
+  "events": [],
+  "note": "Trimmed from reading.raw.mp4 at 3.3s so the adaptation lands on the narration."
+}

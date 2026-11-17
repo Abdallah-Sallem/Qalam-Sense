@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "id": "calibration",
+  "target": "web",
+  "url": "http://localhost:5175/?banner=0&demo=student&profile=steady",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "setup": [
+    {
+      "type": "click",
+      "selectors": [
+        ".text-card"
+      ],
+      "label": "open text"
+    },
+    {
+      "type": "click",
+      "selectors": [
+        "role=button[name=\"Oui, avec la caméra\"]"
+      ],
+      "label": "use camera"
+    },
+    {
+      "type": "wait",
+      "selector": "text=Parfait, je te vois bien",
+      "label": "face ok"
+    },
+    {
+      "type": "dwell",
+      "ms": 1500,
+      "label": "ready unlocks"
+    },
+    {
+      "type": "click",
+      "selectors": [
+        "role=button[name=\"Je suis prêt\"]"
+      ],
+      "label": "ready"
+    },
+    {
+      "type": "wait",
+      "selector": "text=Le jeu de l’étoile",
+      "label": "star game intro"
+    }
+  ],
+  "steps": [
+    {
+      "type": "dwell",
+      "ms": 1500,
+      "label": "read the instructions"
+    },
+    {
+      "type": "click",
+      "selectors": [
+        "role=button[name=\"C’est parti\"]"
+      ],
+      "label": "start"
+    },
+    {
+      "type": "dwell",
+      "ms": 3500,
+      "label": "the star glides",
+      "weight": 3
+    }
+  ]
+}

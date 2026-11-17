@@ -1,0 +1,107 @@
+{
+  "text": "Teachers see what happened, and why. Every change comes with its reasons, and the passages that took the most effort.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "Teachers",
+      "startSec": 0.151,
+      "endSec": 0.799
+    },
+    {
+      "text": "see",
+      "startSec": 0.819,
+      "endSec": 1.061
+    },
+    {
+      "text": "what",
+      "startSec": 1.081,
+      "endSec": 1.337
+    },
+    {
+      "text": "happened,",
+      "startSec": 1.357,
+      "endSec": 2.639
+    },
+    {
+      "text": "and",
+      "startSec": 2.659,
+      "endSec": 2.831
+    },
+    {
+      "text": "why.",
+      "startSec": 2.851,
+      "endSec": 4.575
+    },
+    {
+      "text": "Every",
+      "startSec": 4.595,
+      "endSec": 4.981
+    },
+    {
+      "text": "change",
+      "startSec": 5.001,
+      "endSec": 5.574
+    },
+    {
+      "text": "comes",
+      "startSec": 5.594,
+      "endSec": 6.056
+    },
+    {
+      "text": "with",
+      "startSec": 6.076,
+      "endSec": 6.256
+    },
+    {
+      "text": "its",
+      "startSec": 6.276,
+      "endSec": 6.545
+    },
+    {
+      "text": "reasons,",
+      "startSec": 6.565,
+      "endSec": 7.944
+    },
+    {
+      "text": "and",
+      "startSec": 7.964,
+      "endSec": 8.109
+    },
+    {
+      "text": "the",
+      "startSec": 8.129,
+      "endSec": 8.219
+    },
+    {
+      "text": "passages",
+      "startSec": 8.239,
+      "endSec": 9.135
+    },
+    {
+      "text": "that",
+      "startSec": 9.155,
+      "endSec": 9.39
+    },
+    {
+      "text": "took",
+      "startSec": 9.41,
+      "endSec": 9.735
+    },
+    {
+      "text": "the",
+      "startSec": 9.755,
+      "endSec": 9.873
+    },
+    {
+      "text": "most",
+      "startSec": 9.893,
+      "endSec": 10.383
+    },
+    {
+      "text": "effort.",
+      "startSec": 10.403,
+      "endSec": 8.753
+    }
+  ]
+}

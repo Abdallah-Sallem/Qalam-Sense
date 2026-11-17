@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "clip": "calibration.mp4",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "durationSec": 9.066667,
+  "events": [
+    {
+      "type": "click",
+      "atMs": 2297,
+      "x": 673,
+      "y": 529,
+      "label": "start",
+      "selector": "role=button[name=\"C’est parti\"]"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "text": "Everything runs on the device. No image is ever stored. Qalam-Sense: reading that adapts.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "Everything",
+      "startSec": 0.151,
+      "endSec": 0.834
+    },
+    {
+      "text": "runs",
+      "startSec": 0.854,
+      "endSec": 1.261
+    },
+    {
+      "text": "on",
+      "startSec": 1.281,
+      "endSec": 1.461
+    },
+    {
+      "text": "the",
+      "startSec": 1.481,
+      "endSec": 1.591
+    },
+    {
+      "text": "device.",
+      "startSec": 1.611,
+      "endSec": 3.734
+    },
+    {
+      "text": "No",
+      "startSec": 3.754,
+      "endSec": 4.065
+    },
+    {
+      "text": "image",
+      "startSec": 4.085,
+      "endSec": 4.492
+    },
+    {
+      "text": "is",
+      "startSec": 4.512,
+      "endSec": 4.727
+    },
+    {
+      "text": "ever",
+      "startSec": 4.747,
+      "endSec": 5.092
+    },
+    {
+      "text": "stored.",
+      "startSec": 5.112,
+      "endSec": 7.104
+    },
+    {
+      "text": "Qalam-Sense:",
+      "startSec": 7.124,
+      "endSec": 8.929
+    },
+    {
+      "text": "reading",
+      "startSec": 8.949,
+      "endSec": 9.405
+    },
+    {
+      "text": "that",
+      "startSec": 9.425,
+      "endSec": 9.618
+    },
+    {
+      "text": "adapts.",
+      "startSec": 9.638,
+      "endSec": 8.394
+    }
+  ]
+}

@@ -15,10 +15,11 @@ import { initI18n } from './ui/i18n';
 import { installTestHooks } from './vision/sourceFactory';
 
 initI18n();
-void installTestHooks();
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+// Test hooks are a no-op in normal builds; in test builds they may seed demo data first.
+void installTestHooks().then(() =>
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  ),
 );

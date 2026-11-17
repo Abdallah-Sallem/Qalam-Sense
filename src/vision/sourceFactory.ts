@@ -31,6 +31,11 @@ export async function createObservationSource(options: CameraSourceOptions = {})
 export async function installTestHooks(): Promise<void> {
   if (!TEST_HOOKS_ENABLED) return;
   const { syntheticControls } = await import('@/testing/syntheticSource');
+  const params = new URLSearchParams(location.search);
+  if (params.has('demo')) {
+    const { runDemoSeed } = await import('@/testing/demoSeed');
+    await runDemoSeed(params);
+  }
   (window as unknown as { __qalamTest: unknown }).__qalamTest = {
     useSyntheticSource: (on: boolean) => sessionStorage.setItem(TEST_SOURCE_KEY, on ? 'synthetic' : 'camera'),
     controls: syntheticControls,

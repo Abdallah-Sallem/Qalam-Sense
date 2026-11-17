@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "slug": "qalam-sense-overview",
+  "product": {
+    "name": "Qalam-Sense",
+    "tagline": "Reading that adapts to every child, in Arabic and French",
+    "audience": "Teachers and parents of children with reading difficulties; internship interviewers",
+    "valueProps": [
+      "An ordinary webcam follows reading, entirely on the device",
+      "The text adapts gently when reading becomes effortful",
+      "Teachers see what changed and why"
+    ]
+  },
+  "brand": {
+    "colors": {
+      "primary": "#1D9E75",
+      "bg": "#0C1F1A",
+      "text": "#FFFFFF"
+    },
+    "logo": null,
+    "font": "Inter"
+  },
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "voice": {
+    "provider": "fal",
+    "model": "fal-ai/elevenlabs/tts/eleven-v3",
+    "voice": "Rachel",
+    "stability": 0.4,
+    "speed": 1,
+    "note": "The current audio files were made offline with the built-in Windows voice (Microsoft Zira) by tts-windows.mjs, because the fal.ai account had no credit. Run gen/tts.mjs --all --force to replace them with this AI voice."
+  },
+  "presenter": {
+    "mode": "none",
+    "description": "",
+    "characterImage": null,
+    "engine": "fal-ai/kling-video/ai-avatar/v2/standard"
+  },
+  "music": {
+    "enabled": false,
+    "bed": null,
+    "duckDb": -14
+  },
+  "captions": {
+    "enabled": true,
+    "style": "clean"
+  },
+  "pacing": {
+    "breathSec": 0.45
+  },
+  "cover": null,
+  "timeline": [
+    {
+      "id": "hook",
+      "kind": "card",
+      "title": "Every child reads differently",
+      "subtitle": "Qalam-Sense · Arabic & French",
+      "narration": "Every child reads differently. In a class of thirty, the ones who struggle often go unseen.",
+      "note": "Hook: the problem, before the product.",
+      "audio": "audio/hook.mp3",
+      "words": "audio/hook.words.json",
+      "narrationSec": 7.59,
+      "durationSec": 8.04
+    },
+    {
+      "id": "teacher",
+      "kind": "demo",
+      "target": "web",
+      "narration": "A teacher adds a student in seconds. The app creates a login, a PIN, and a one-time code for the parent.",
+      "note": "Fictional teacher adds a fictional student, Lina.",
+      "audio": "audio/teacher.mp3",
+      "words": "audio/teacher.words.json",
+      "narrationSec": 8.67,
+      "durationSec": 9.12,
+      "actions": "actions/teacher.json",
+      "video": "clips/teacher.mp4",
+      "events": "clips/teacher.events.json"
+    },
+    {
+      "id": "calibration",
+      "kind": "demo",
+      "target": "web",
+      "narration": "With a parent's consent, an ordinary webcam follows the reader. A short star game calibrates it.",
+      "note": "Star calibration game. Gaze comes from the simulated reader.",
+      "audio": "audio/calibration.mp3",
+      "words": "audio/calibration.words.json",
+      "narrationSec": 7.84,
+      "durationSec": 8.29,
+      "actions": "actions/calibration.json",
+      "video": "clips/calibration.mp4",
+      "events": "clips/calibration.events.json"
+    },
+    {
+      "id": "reading",
+      "kind": "demo",
+      "target": "web",
+      "narration": "When reading gets harder, the text adapts. Larger letters, more space, calmer colours. Gently, and the child can always undo it.",
+      "note": "Simulated reader becomes effortful; the engine raises support on camera.",
+      "audio": "audio/reading.mp3",
+      "words": "audio/reading.words.json",
+      "narrationSec": 12.33,
+      "durationSec": 12.78,
+      "actions": "actions/reading.json",
+      "video": "clips/reading.mp4",
+      "events": "clips/reading.events.json",
+      "captionPlacement": "mid"
+    },
+    {
+      "id": "report",
+      "kind": "demo",
+      "target": "web",
+      "narration": "Teachers see what happened, and why. Every change comes with its reasons, and the passages that took the most effort.",
+      "note": "Teacher report for a session produced by the real pipeline on a simulated reader.",
+      "audio": "audio/report.mp3",
+      "words": "audio/report.words.json",
+      "narrationSec": 8.85,
+      "durationSec": 9.3,
+      "actions": "actions/report.json",
+      "video": "clips/report.mp4",
+      "events": "clips/report.events.json"
+    },
+    {
+      "id": "outro",
+      "kind": "card",
+      "title": "Private by design",
+      "subtitle": "Runs entirely on the device · reading scenes use a simulated reader",
+      "cta": "github.com/Abdallah-Sallem/Qalam-Sense",
+      "narration": "Everything runs on the device. No image is ever stored. Qalam-Sense: reading that adapts.",
+      "audio": "audio/outro.mp3",
+      "words": "audio/outro.words.json",
+      "narrationSec": 8.49,
+      "durationSec": 8.94
+    }
+  ],
+  "transitions": [],
+  "style": "explainer"
+}

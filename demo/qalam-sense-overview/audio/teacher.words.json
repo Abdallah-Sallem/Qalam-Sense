@@ -1,0 +1,112 @@
+{
+  "text": "A teacher adds a student in seconds. The app creates a login, a PIN, and a one-time code for the parent.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "A",
+      "startSec": 0.151,
+      "endSec": 0.331
+    },
+    {
+      "text": "teacher",
+      "startSec": 0.351,
+      "endSec": 0.964
+    },
+    {
+      "text": "adds",
+      "startSec": 0.984,
+      "endSec": 1.226
+    },
+    {
+      "text": "a",
+      "startSec": 1.246,
+      "endSec": 1.309
+    },
+    {
+      "text": "student",
+      "startSec": 1.329,
+      "endSec": 1.977
+    },
+    {
+      "text": "in",
+      "startSec": 1.997,
+      "endSec": 2.163
+    },
+    {
+      "text": "seconds.",
+      "startSec": 2.183,
+      "endSec": 4.416
+    },
+    {
+      "text": "The",
+      "startSec": 4.436,
+      "endSec": 4.63
+    },
+    {
+      "text": "app",
+      "startSec": 4.65,
+      "endSec": 5.002
+    },
+    {
+      "text": "creates",
+      "startSec": 5.022,
+      "endSec": 5.642
+    },
+    {
+      "text": "a",
+      "startSec": 5.662,
+      "endSec": 5.746
+    },
+    {
+      "text": "login,",
+      "startSec": 5.766,
+      "endSec": 6.993
+    },
+    {
+      "text": "a",
+      "startSec": 7.013,
+      "endSec": 7.103
+    },
+    {
+      "text": "PIN,",
+      "startSec": 7.123,
+      "endSec": 8.247
+    },
+    {
+      "text": "and",
+      "startSec": 8.267,
+      "endSec": 8.398
+    },
+    {
+      "text": "a",
+      "startSec": 8.418,
+      "endSec": 8.515
+    },
+    {
+      "text": "one-time",
+      "startSec": 8.535,
+      "endSec": 9.266
+    },
+    {
+      "text": "code",
+      "startSec": 9.286,
+      "endSec": 9.776
+    },
+    {
+      "text": "for",
+      "startSec": 9.796,
+      "endSec": 9.962
+    },
+    {
+      "text": "the",
+      "startSec": 9.982,
+      "endSec": 10.065
+    },
+    {
+      "text": "parent.",
+      "startSec": 10.085,
+      "endSec": 8.575
+    }
+  ]
+}

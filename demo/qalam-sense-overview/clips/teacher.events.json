@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "clip": "teacher.mp4",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "durationSec": 9.566667,
+  "events": [
+    {
+      "type": "focus",
+      "atMs": 425,
+      "selector": "role=textbox[name=\"Prénom\"]",
+      "label": "first name"
+    },
+    {
+      "type": "type",
+      "atMs": 740,
+      "text": "Lina",
+      "label": "first name"
+    },
+    {
+      "type": "click",
+      "atMs": 2662,
+      "x": 1105,
+      "y": 352,
+      "label": "Create",
+      "selector": "role=button[name=\"Créer\"]"
+    },
+    {
+      "type": "highlight",
+      "atMs": 5589,
+      "x": 720,
+      "y": 246,
+      "width": 504,
+      "height": 128,
+      "label": "login, PIN and parent code"
+    }
+  ]
+}

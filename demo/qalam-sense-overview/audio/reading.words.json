@@ -1,0 +1,112 @@
+{
+  "text": "When reading gets harder, the text adapts. Larger letters, more space, calmer colours. Gently, and the child can always undo it.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "When",
+      "startSec": 0.151,
+      "endSec": 0.42
+    },
+    {
+      "text": "reading",
+      "startSec": 0.44,
+      "endSec": 0.916
+    },
+    {
+      "text": "gets",
+      "startSec": 0.936,
+      "endSec": 1.281
+    },
+    {
+      "text": "harder,",
+      "startSec": 1.301,
+      "endSec": 2.522
+    },
+    {
+      "text": "the",
+      "startSec": 2.542,
+      "endSec": 2.659
+    },
+    {
+      "text": "text",
+      "startSec": 2.679,
+      "endSec": 3.252
+    },
+    {
+      "text": "adapts.",
+      "startSec": 3.272,
+      "endSec": 5.47
+    },
+    {
+      "text": "Larger",
+      "startSec": 5.49,
+      "endSec": 6.111
+    },
+    {
+      "text": "letters,",
+      "startSec": 6.131,
+      "endSec": 7.427
+    },
+    {
+      "text": "more",
+      "startSec": 7.447,
+      "endSec": 7.765
+    },
+    {
+      "text": "space,",
+      "startSec": 7.785,
+      "endSec": 9.191
+    },
+    {
+      "text": "calmer",
+      "startSec": 9.211,
+      "endSec": 9.701
+    },
+    {
+      "text": "colours.",
+      "startSec": 9.721,
+      "endSec": 11.864
+    },
+    {
+      "text": "Gently,",
+      "startSec": 11.884,
+      "endSec": 13.18
+    },
+    {
+      "text": "and",
+      "startSec": 13.2,
+      "endSec": 13.338
+    },
+    {
+      "text": "the",
+      "startSec": 13.358,
+      "endSec": 13.49
+    },
+    {
+      "text": "child",
+      "startSec": 13.51,
+      "endSec": 14.138
+    },
+    {
+      "text": "can",
+      "startSec": 14.158,
+      "endSec": 14.42
+    },
+    {
+      "text": "always",
+      "startSec": 14.44,
+      "endSec": 15.04
+    },
+    {
+      "text": "undo",
+      "startSec": 15.06,
+      "endSec": 15.522
+    },
+    {
+      "text": "it.",
+      "startSec": 15.542,
+      "endSec": 12.228
+    }
+  ]
+}

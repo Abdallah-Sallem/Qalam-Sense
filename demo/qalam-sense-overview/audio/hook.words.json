@@ -1,0 +1,87 @@
+{
+  "text": "Every child reads differently. In a class of thirty, the ones who struggle often go unseen.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "Every",
+      "startSec": 0.151,
+      "endSec": 0.53
+    },
+    {
+      "text": "child",
+      "startSec": 0.55,
+      "endSec": 1.192
+    },
+    {
+      "text": "reads",
+      "startSec": 1.212,
+      "endSec": 1.591
+    },
+    {
+      "text": "differently.",
+      "startSec": 1.611,
+      "endSec": 3.879
+    },
+    {
+      "text": "In",
+      "startSec": 3.899,
+      "endSec": 4.03
+    },
+    {
+      "text": "a",
+      "startSec": 4.05,
+      "endSec": 4.134
+    },
+    {
+      "text": "class",
+      "startSec": 4.154,
+      "endSec": 4.74
+    },
+    {
+      "text": "of",
+      "startSec": 4.76,
+      "endSec": 4.912
+    },
+    {
+      "text": "thirty,",
+      "startSec": 4.932,
+      "endSec": 6.159
+    },
+    {
+      "text": "the",
+      "startSec": 6.179,
+      "endSec": 6.297
+    },
+    {
+      "text": "ones",
+      "startSec": 6.317,
+      "endSec": 6.738
+    },
+    {
+      "text": "who",
+      "startSec": 6.758,
+      "endSec": 6.972
+    },
+    {
+      "text": "struggle",
+      "startSec": 6.992,
+      "endSec": 7.599
+    },
+    {
+      "text": "often",
+      "startSec": 7.619,
+      "endSec": 8.102
+    },
+    {
+      "text": "go",
+      "startSec": 8.122,
+      "endSec": 8.378
+    },
+    {
+      "text": "unseen.",
+      "startSec": 8.398,
+      "endSec": 7.493
+    }
+  ]
+}

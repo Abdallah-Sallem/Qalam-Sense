@@ -1,0 +1,751 @@
+{
+  "slug": "qalam-sense-overview",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "brand": {
+    "colors": {
+      "primary": "#1D9E75",
+      "bg": "#0C1F1A",
+      "text": "#FFFFFF"
+    },
+    "logo": null,
+    "font": "Inter"
+  },
+  "style": "explainer",
+  "presenter": {
+    "mode": "none",
+    "description": "",
+    "characterImage": null,
+    "engine": "fal-ai/kling-video/ai-avatar/v2/standard"
+  },
+  "music": {
+    "enabled": false,
+    "bed": null,
+    "duckDb": -14
+  },
+  "captions": {
+    "enabled": true,
+    "style": "clean"
+  },
+  "cover": null,
+  "sfx": null,
+  "sfxTrack": [],
+  "transitions": [],
+  "timeline": [
+    {
+      "id": "hook",
+      "kind": "card",
+      "title": "Every child reads differently",
+      "subtitle": "Qalam-Sense · Arabic & French",
+      "narration": "Every child reads differently. In a class of thirty, the ones who struggle often go unseen.",
+      "note": "Hook: the problem, before the product.",
+      "audio": "audio/hook.mp3",
+      "words": "audio/hook.words.json",
+      "narrationSec": 7.59,
+      "durationSec": 8.04,
+      "wordTimings": [
+        {
+          "text": "Every",
+          "startSec": 0.151,
+          "endSec": 0.53
+        },
+        {
+          "text": "child",
+          "startSec": 0.55,
+          "endSec": 1.192
+        },
+        {
+          "text": "reads",
+          "startSec": 1.212,
+          "endSec": 1.591
+        },
+        {
+          "text": "differently.",
+          "startSec": 1.611,
+          "endSec": 3.879
+        },
+        {
+          "text": "In",
+          "startSec": 3.899,
+          "endSec": 4.03
+        },
+        {
+          "text": "a",
+          "startSec": 4.05,
+          "endSec": 4.134
+        },
+        {
+          "text": "class",
+          "startSec": 4.154,
+          "endSec": 4.74
+        },
+        {
+          "text": "of",
+          "startSec": 4.76,
+          "endSec": 4.912
+        },
+        {
+          "text": "thirty,",
+          "startSec": 4.932,
+          "endSec": 6.159
+        },
+        {
+          "text": "the",
+          "startSec": 6.179,
+          "endSec": 6.297
+        },
+        {
+          "text": "ones",
+          "startSec": 6.317,
+          "endSec": 6.738
+        },
+        {
+          "text": "who",
+          "startSec": 6.758,
+          "endSec": 6.972
+        },
+        {
+          "text": "struggle",
+          "startSec": 6.992,
+          "endSec": 7.599
+        },
+        {
+          "text": "often",
+          "startSec": 7.619,
+          "endSec": 8.102
+        },
+        {
+          "text": "go",
+          "startSec": 8.122,
+          "endSec": 8.378
+        },
+        {
+          "text": "unseen.",
+          "startSec": 8.398,
+          "endSec": 7.493
+        }
+      ]
+    },
+    {
+      "id": "teacher",
+      "kind": "demo",
+      "target": "web",
+      "narration": "A teacher adds a student in seconds. The app creates a login, a PIN, and a one-time code for the parent.",
+      "note": "Fictional teacher adds a fictional student, Lina.",
+      "audio": "audio/teacher.mp3",
+      "words": "audio/teacher.words.json",
+      "narrationSec": 8.67,
+      "durationSec": 9.12,
+      "actions": "actions/teacher.json",
+      "video": "clips/teacher.mp4",
+      "events": [
+        {
+          "type": "focus",
+          "atMs": 425,
+          "selector": "role=textbox[name=\"Prénom\"]",
+          "label": "first name"
+        },
+        {
+          "type": "type",
+          "atMs": 740,
+          "text": "Lina",
+          "label": "first name"
+        },
+        {
+          "type": "click",
+          "atMs": 2662,
+          "x": 1105,
+          "y": 352,
+          "label": "Create",
+          "selector": "role=button[name=\"Créer\"]"
+        },
+        {
+          "type": "highlight",
+          "atMs": 5589,
+          "x": 720,
+          "y": 246,
+          "width": 504,
+          "height": 128,
+          "label": "login, PIN and parent code"
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "wordTimings": [
+        {
+          "text": "A",
+          "startSec": 0.151,
+          "endSec": 0.331
+        },
+        {
+          "text": "teacher",
+          "startSec": 0.351,
+          "endSec": 0.964
+        },
+        {
+          "text": "adds",
+          "startSec": 0.984,
+          "endSec": 1.226
+        },
+        {
+          "text": "a",
+          "startSec": 1.246,
+          "endSec": 1.309
+        },
+        {
+          "text": "student",
+          "startSec": 1.329,
+          "endSec": 1.977
+        },
+        {
+          "text": "in",
+          "startSec": 1.997,
+          "endSec": 2.163
+        },
+        {
+          "text": "seconds.",
+          "startSec": 2.183,
+          "endSec": 4.416
+        },
+        {
+          "text": "The",
+          "startSec": 4.436,
+          "endSec": 4.63
+        },
+        {
+          "text": "app",
+          "startSec": 4.65,
+          "endSec": 5.002
+        },
+        {
+          "text": "creates",
+          "startSec": 5.022,
+          "endSec": 5.642
+        },
+        {
+          "text": "a",
+          "startSec": 5.662,
+          "endSec": 5.746
+        },
+        {
+          "text": "login,",
+          "startSec": 5.766,
+          "endSec": 6.993
+        },
+        {
+          "text": "a",
+          "startSec": 7.013,
+          "endSec": 7.103
+        },
+        {
+          "text": "PIN,",
+          "startSec": 7.123,
+          "endSec": 8.247
+        },
+        {
+          "text": "and",
+          "startSec": 8.267,
+          "endSec": 8.398
+        },
+        {
+          "text": "a",
+          "startSec": 8.418,
+          "endSec": 8.515
+        },
+        {
+          "text": "one-time",
+          "startSec": 8.535,
+          "endSec": 9.266
+        },
+        {
+          "text": "code",
+          "startSec": 9.286,
+          "endSec": 9.776
+        },
+        {
+          "text": "for",
+          "startSec": 9.796,
+          "endSec": 9.962
+        },
+        {
+          "text": "the",
+          "startSec": 9.982,
+          "endSec": 10.065
+        },
+        {
+          "text": "parent.",
+          "startSec": 10.085,
+          "endSec": 8.575
+        }
+      ]
+    },
+    {
+      "id": "calibration",
+      "kind": "demo",
+      "target": "web",
+      "narration": "With a parent's consent, an ordinary webcam follows the reader. A short star game calibrates it.",
+      "note": "Star calibration game. Gaze comes from the simulated reader.",
+      "audio": "audio/calibration.mp3",
+      "words": "audio/calibration.words.json",
+      "narrationSec": 7.84,
+      "durationSec": 8.29,
+      "actions": "actions/calibration.json",
+      "video": "clips/calibration.mp4",
+      "events": [
+        {
+          "type": "click",
+          "atMs": 2297,
+          "x": 673,
+          "y": 529,
+          "label": "start",
+          "selector": "role=button[name=\"C’est parti\"]"
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "wordTimings": [
+        {
+          "text": "With",
+          "startSec": 0.151,
+          "endSec": 0.358
+        },
+        {
+          "text": "a",
+          "startSec": 0.378,
+          "endSec": 0.441
+        },
+        {
+          "text": "parent's",
+          "startSec": 0.461,
+          "endSec": 1.061
+        },
+        {
+          "text": "consent,",
+          "startSec": 1.081,
+          "endSec": 2.549
+        },
+        {
+          "text": "an",
+          "startSec": 2.569,
+          "endSec": 2.763
+        },
+        {
+          "text": "ordinary",
+          "startSec": 2.783,
+          "endSec": 3.458
+        },
+        {
+          "text": "webcam",
+          "startSec": 3.478,
+          "endSec": 4.168
+        },
+        {
+          "text": "follows",
+          "startSec": 4.188,
+          "endSec": 4.829
+        },
+        {
+          "text": "the",
+          "startSec": 4.849,
+          "endSec": 5.036
+        },
+        {
+          "text": "reader.",
+          "startSec": 5.056,
+          "endSec": 6.903
+        },
+        {
+          "text": "A",
+          "startSec": 6.923,
+          "endSec": 7
+        },
+        {
+          "text": "short",
+          "startSec": 7.02,
+          "endSec": 7.51
+        },
+        {
+          "text": "star",
+          "startSec": 7.53,
+          "endSec": 7.985
+        },
+        {
+          "text": "game",
+          "startSec": 8.005,
+          "endSec": 8.433
+        },
+        {
+          "text": "calibrates",
+          "startSec": 8.453,
+          "endSec": 9.37
+        },
+        {
+          "text": "it.",
+          "startSec": 9.39,
+          "endSec": 7.739
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "kind": "demo",
+      "target": "web",
+      "narration": "When reading gets harder, the text adapts. Larger letters, more space, calmer colours. Gently, and the child can always undo it.",
+      "note": "Simulated reader becomes effortful; the engine raises support on camera.",
+      "audio": "audio/reading.mp3",
+      "words": "audio/reading.words.json",
+      "narrationSec": 12.33,
+      "durationSec": 12.78,
+      "actions": "actions/reading.json",
+      "video": "clips/reading.mp4",
+      "events": [],
+      "captionPlacement": "mid",
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "wordTimings": [
+        {
+          "text": "When",
+          "startSec": 0.151,
+          "endSec": 0.42
+        },
+        {
+          "text": "reading",
+          "startSec": 0.44,
+          "endSec": 0.916
+        },
+        {
+          "text": "gets",
+          "startSec": 0.936,
+          "endSec": 1.281
+        },
+        {
+          "text": "harder,",
+          "startSec": 1.301,
+          "endSec": 2.522
+        },
+        {
+          "text": "the",
+          "startSec": 2.542,
+          "endSec": 2.659
+        },
+        {
+          "text": "text",
+          "startSec": 2.679,
+          "endSec": 3.252
+        },
+        {
+          "text": "adapts.",
+          "startSec": 3.272,
+          "endSec": 5.47
+        },
+        {
+          "text": "Larger",
+          "startSec": 5.49,
+          "endSec": 6.111
+        },
+        {
+          "text": "letters,",
+          "startSec": 6.131,
+          "endSec": 7.427
+        },
+        {
+          "text": "more",
+          "startSec": 7.447,
+          "endSec": 7.765
+        },
+        {
+          "text": "space,",
+          "startSec": 7.785,
+          "endSec": 9.191
+        },
+        {
+          "text": "calmer",
+          "startSec": 9.211,
+          "endSec": 9.701
+        },
+        {
+          "text": "colours.",
+          "startSec": 9.721,
+          "endSec": 11.864
+        },
+        {
+          "text": "Gently,",
+          "startSec": 11.884,
+          "endSec": 13.18
+        },
+        {
+          "text": "and",
+          "startSec": 13.2,
+          "endSec": 13.338
+        },
+        {
+          "text": "the",
+          "startSec": 13.358,
+          "endSec": 13.49
+        },
+        {
+          "text": "child",
+          "startSec": 13.51,
+          "endSec": 14.138
+        },
+        {
+          "text": "can",
+          "startSec": 14.158,
+          "endSec": 14.42
+        },
+        {
+          "text": "always",
+          "startSec": 14.44,
+          "endSec": 15.04
+        },
+        {
+          "text": "undo",
+          "startSec": 15.06,
+          "endSec": 15.522
+        },
+        {
+          "text": "it.",
+          "startSec": 15.542,
+          "endSec": 12.228
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "kind": "demo",
+      "target": "web",
+      "narration": "Teachers see what happened, and why. Every change comes with its reasons, and the passages that took the most effort.",
+      "note": "Teacher report for a session produced by the real pipeline on a simulated reader.",
+      "audio": "audio/report.mp3",
+      "words": "audio/report.words.json",
+      "narrationSec": 8.85,
+      "durationSec": 9.3,
+      "actions": "actions/report.json",
+      "video": "clips/report.mp4",
+      "events": [
+        {
+          "type": "click",
+          "atMs": 914,
+          "x": 1154,
+          "y": 524,
+          "label": "session details",
+          "selector": "role=button[name=\"Détails\"]"
+        },
+        {
+          "type": "scroll",
+          "atMs": 3854,
+          "dy": 330,
+          "label": "to the adaptation log"
+        },
+        {
+          "type": "highlight",
+          "atMs": 5786,
+          "x": 720,
+          "y": 293,
+          "width": 995,
+          "height": 61,
+          "label": "each change and its reasons"
+        }
+      ],
+      "viewport": {
+        "width": 1440,
+        "height": 810
+      },
+      "wordTimings": [
+        {
+          "text": "Teachers",
+          "startSec": 0.151,
+          "endSec": 0.799
+        },
+        {
+          "text": "see",
+          "startSec": 0.819,
+          "endSec": 1.061
+        },
+        {
+          "text": "what",
+          "startSec": 1.081,
+          "endSec": 1.337
+        },
+        {
+          "text": "happened,",
+          "startSec": 1.357,
+          "endSec": 2.639
+        },
+        {
+          "text": "and",
+          "startSec": 2.659,
+          "endSec": 2.831
+        },
+        {
+          "text": "why.",
+          "startSec": 2.851,
+          "endSec": 4.575
+        },
+        {
+          "text": "Every",
+          "startSec": 4.595,
+          "endSec": 4.981
+        },
+        {
+          "text": "change",
+          "startSec": 5.001,
+          "endSec": 5.574
+        },
+        {
+          "text": "comes",
+          "startSec": 5.594,
+          "endSec": 6.056
+        },
+        {
+          "text": "with",
+          "startSec": 6.076,
+          "endSec": 6.256
+        },
+        {
+          "text": "its",
+          "startSec": 6.276,
+          "endSec": 6.545
+        },
+        {
+          "text": "reasons,",
+          "startSec": 6.565,
+          "endSec": 7.944
+        },
+        {
+          "text": "and",
+          "startSec": 7.964,
+          "endSec": 8.109
+        },
+        {
+          "text": "the",
+          "startSec": 8.129,
+          "endSec": 8.219
+        },
+        {
+          "text": "passages",
+          "startSec": 8.239,
+          "endSec": 9.135
+        },
+        {
+          "text": "that",
+          "startSec": 9.155,
+          "endSec": 9.39
+        },
+        {
+          "text": "took",
+          "startSec": 9.41,
+          "endSec": 9.735
+        },
+        {
+          "text": "the",
+          "startSec": 9.755,
+          "endSec": 9.873
+        },
+        {
+          "text": "most",
+          "startSec": 9.893,
+          "endSec": 10.383
+        },
+        {
+          "text": "effort.",
+          "startSec": 10.403,
+          "endSec": 8.753
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "kind": "card",
+      "title": "Private by design",
+      "subtitle": "Runs entirely on the device · reading scenes use a simulated reader",
+      "cta": "github.com/Abdallah-Sallem/Qalam-Sense",
+      "narration": "Everything runs on the device. No image is ever stored. Qalam-Sense: reading that adapts.",
+      "audio": "audio/outro.mp3",
+      "words": "audio/outro.words.json",
+      "narrationSec": 8.49,
+      "durationSec": 8.94,
+      "wordTimings": [
+        {
+          "text": "Everything",
+          "startSec": 0.151,
+          "endSec": 0.834
+        },
+        {
+          "text": "runs",
+          "startSec": 0.854,
+          "endSec": 1.261
+        },
+        {
+          "text": "on",
+          "startSec": 1.281,
+          "endSec": 1.461
+        },
+        {
+          "text": "the",
+          "startSec": 1.481,
+          "endSec": 1.591
+        },
+        {
+          "text": "device.",
+          "startSec": 1.611,
+          "endSec": 3.734
+        },
+        {
+          "text": "No",
+          "startSec": 3.754,
+          "endSec": 4.065
+        },
+        {
+          "text": "image",
+          "startSec": 4.085,
+          "endSec": 4.492
+        },
+        {
+          "text": "is",
+          "startSec": 4.512,
+          "endSec": 4.727
+        },
+        {
+          "text": "ever",
+          "startSec": 4.747,
+          "endSec": 5.092
+        },
+        {
+          "text": "stored.",
+          "startSec": 5.112,
+          "endSec": 7.104
+        },
+        {
+          "text": "Qalam-Sense:",
+          "startSec": 7.124,
+          "endSec": 8.929
+        },
+        {
+          "text": "reading",
+          "startSec": 8.949,
+          "endSec": 9.405
+        },
+        {
+          "text": "that",
+          "startSec": 9.425,
+          "endSec": 9.618
+        },
+        {
+          "text": "adapts.",
+          "startSec": 9.638,
+          "endSec": 8.394
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "clip": "report.mp4",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "durationSec": 6,
+  "events": [
+    {
+      "type": "click",
+      "atMs": 914,
+      "x": 1154,
+      "y": 524,
+      "label": "session details",
+      "selector": "role=button[name=\"Détails\"]"
+    },
+    {
+      "type": "scroll",
+      "atMs": 3854,
+      "dy": 330,
+      "label": "to the adaptation log"
+    },
+    {
+      "type": "highlight",
+      "atMs": 5786,
+      "x": 720,
+      "y": 293,
+      "width": 995,
+      "height": 61,
+      "label": "each change and its reasons"
+    }
+  ]
+}

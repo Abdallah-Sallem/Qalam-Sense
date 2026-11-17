@@ -10,3 +10,11 @@ playwright-report/
 # Vision runtime assets are reproduced by `npm run setup:vision`
 public/vision/
 .claude/
+.env.demo
+*.local.md
+# Demo video projects: keep sources, skip installs and scratch output
+demo/*/remotion/node_modules/
+demo/*/qa/
+demo/*/clips/*.raw.*
+demo/*/.cache/
+demo/*/clips/.rawvideo/

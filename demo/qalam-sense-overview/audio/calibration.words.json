@@ -1,0 +1,87 @@
+{
+  "text": "With a parent's consent, an ordinary webcam follows the reader. A short star game calibrates it.",
+  "voice": "Microsoft Zira Desktop",
+  "model": "windows-system-speech",
+  "timestamps": [
+    {
+      "text": "With",
+      "startSec": 0.151,
+      "endSec": 0.358
+    },
+    {
+      "text": "a",
+      "startSec": 0.378,
+      "endSec": 0.441
+    },
+    {
+      "text": "parent's",
+      "startSec": 0.461,
+      "endSec": 1.061
+    },
+    {
+      "text": "consent,",
+      "startSec": 1.081,
+      "endSec": 2.549
+    },
+    {
+      "text": "an",
+      "startSec": 2.569,
+      "endSec": 2.763
+    },
+    {
+      "text": "ordinary",
+      "startSec": 2.783,
+      "endSec": 3.458
+    },
+    {
+      "text": "webcam",
+      "startSec": 3.478,
+      "endSec": 4.168
+    },
+    {
+      "text": "follows",
+      "startSec": 4.188,
+      "endSec": 4.829
+    },
+    {
+      "text": "the",
+      "startSec": 4.849,
+      "endSec": 5.036
+    },
+    {
+      "text": "reader.",
+      "startSec": 5.056,
+      "endSec": 6.903
+    },
+    {
+      "text": "A",
+      "startSec": 6.923,
+      "endSec": 7
+    },
+    {
+      "text": "short",
+      "startSec": 7.02,
+      "endSec": 7.51
+    },
+    {
+      "text": "star",
+      "startSec": 7.53,
+      "endSec": 7.985
+    },
+    {
+      "text": "game",
+      "startSec": 8.005,
+      "endSec": 8.433
+    },
+    {
+      "text": "calibrates",
+      "startSec": 8.453,
+      "endSec": 9.37
+    },
+    {
+      "text": "it.",
+      "startSec": 9.39,
+      "endSec": 7.739
+    }
+  ]
+}

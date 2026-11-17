@@ -94,7 +94,7 @@ export function App() {
           </main>
         )}
       >
-        {syntheticSourceSelected() && <div className="test-banner">TEST MODE — synthetic gaze source, not a real camera</div>}
+        {syntheticSourceSelected() && sessionStorage.getItem('qalam:hide-test-banner') !== '1' && <div className="test-banner">TEST MODE — synthetic gaze source, not a real camera</div>}
         <Routes session={session} />
       </ErrorBoundary>
     </AppContext.Provider>

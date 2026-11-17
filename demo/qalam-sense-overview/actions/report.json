@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "id": "report",
+  "target": "web",
+  "url": "http://localhost:5175/?banner=0&demo=report",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "setup": [
+    {
+      "type": "wait",
+      "selector": "text=Amine",
+      "label": "class list ready"
+    },
+    {
+      "type": "click",
+      "selectors": [
+        "role=link[name=\"Amine\"]"
+      ],
+      "label": "open Amine"
+    },
+    {
+      "type": "wait",
+      "selector": "role=button[name=\"Détails\"]",
+      "label": "sessions loaded"
+    },
+    {
+      "type": "scroll",
+      "dy": 560,
+      "label": "to the sessions table"
+    }
+  ],
+  "steps": [
+    {
+      "type": "click",
+      "selectors": [
+        "role=button[name=\"Détails\"]"
+      ],
+      "label": "session details"
+    },
+    {
+      "type": "scroll",
+      "dy": 330,
+      "label": "to the adaptation log"
+    },
+    {
+      "type": "highlight",
+      "selectors": [
+        ".timeline"
+      ],
+      "ms": 1800,
+      "label": "each change and its reasons",
+      "weight": 2
+    },
+    {
+      "type": "dwell",
+      "ms": 1500,
+      "label": "the passages that took effort",
+      "weight": 2
+    }
+  ]
+}

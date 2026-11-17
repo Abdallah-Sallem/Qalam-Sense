@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "id": "teacher",
+  "target": "web",
+  "url": "http://localhost:5175/?banner=0&demo=teacher",
+  "viewport": {
+    "width": 1440,
+    "height": 810
+  },
+  "setup": [
+    {
+      "type": "wait",
+      "selector": "text=Ajouter un élève",
+      "label": "dashboard ready"
+    }
+  ],
+  "steps": [
+    {
+      "type": "type",
+      "selectors": [
+        "role=textbox[name=\"Prénom\"]"
+      ],
+      "text": "Lina",
+      "label": "first name"
+    },
+    {
+      "type": "click",
+      "selectors": [
+        "role=button[name=\"Créer\"]"
+      ],
+      "label": "Create",
+      "pinToWord": "seconds"
+    },
+    {
+      "type": "highlight",
+      "selectors": [
+        ".credentials dl"
+      ],
+      "ms": 1500,
+      "label": "login, PIN and parent code",
+      "weight": 3
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+.snapshots/
+.remember/
+test-results/
+playwright-report/
+*.local
+.env
+# Vision runtime assets are reproduced by `npm run setup:vision`
+public/vision/
+.claude/

@@ -1,0 +1,307 @@
+/* The reading surface. Its typography is driven entirely by the --rd-*
+   custom properties written by adaptation/applier.ts. */
+
+.reader {
+  min-block-size: 100vh;
+  background: var(--rd-page, var(--bg));
+  padding-block-end: 7rem;
+}
+
+.reader-bar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-block-end: 1px solid var(--line);
+}
+.reader-bar-mid {
+  flex: 1;
+  min-inline-size: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.reader-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reader-progress {
+  inline-size: 100%;
+  block-size: 6px;
+  accent-color: var(--brand);
+}
+.reader-bar-end {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.reader-clock {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.reader-clock.is-low {
+  color: var(--warn-ink);
+  font-weight: 700;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.pill-dot {
+  inline-size: 0.6rem;
+  block-size: 0.6rem;
+  border-radius: 50%;
+  background: #b9bcc2;
+}
+.pill-tracking .pill-dot {
+  background: #1d9e75;
+}
+.pill-degraded .pill-dot {
+  background: #d99a00;
+}
+
+.reader-panel {
+  position: sticky;
+  inset-block-start: 3.6rem;
+  z-index: 25;
+  max-inline-size: 44rem;
+  margin: 0.5rem auto 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.panel-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding-block: 0.3rem;
+}
+.panel-row > span:first-child {
+  min-inline-size: 8.5rem;
+  font-weight: 700;
+}
+.swatch {
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  border-radius: 50%;
+  border: 2px solid #8b8f96;
+  cursor: pointer;
+}
+.swatch[aria-pressed='true'] {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+.swatch-paper {
+  background: #ffffff;
+}
+.swatch-cream {
+  background: #fbf4e2;
+}
+.swatch-sky {
+  background: #eaf3fa;
+}
+.swatch-dusk {
+  background: #1e2530;
+}
+.level-dots {
+  display: inline-flex;
+  gap: 5px;
+}
+.level-dots span {
+  inline-size: 12px;
+  block-size: 12px;
+  border-radius: 50%;
+  background: #d9d6cd;
+}
+.level-dots span.on {
+  background: var(--brand);
+}
+
+.reader-hint {
+  max-inline-size: 44rem;
+  margin: 0.75rem auto 0;
+  padding: 0.5rem 1rem;
+  background: var(--info-soft);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reader-text {
+  --rd-size: 1;
+  --rd-line: 1.7;
+  --rd-letter: 0em;
+  --rd-word: 0em;
+  --rd-para: 1em;
+  --rd-width: 68ch;
+  --rd-bg: #ffffff;
+  --rd-fg: #1f2328;
+  --syl-a: #0b4f9e;
+  --syl-b: #8a1f52;
+
+  max-inline-size: var(--rd-width);
+  margin: 1.5rem auto;
+  padding: 2rem clamp(1rem, 4vw, 2.5rem);
+  border-radius: 16px;
+  background: var(--rd-bg);
+  color: var(--rd-fg);
+  font-family: var(--rd-font, 'Lexend', sans-serif);
+  font-size: calc(1.3rem * var(--rd-size));
+  line-height: var(--rd-line);
+  letter-spacing: var(--rd-letter);
+  word-spacing: var(--rd-word);
+  text-align: start;
+  /* Slow, eased changes: the text should seem to relax, never to jump. */
+  transition:
+    font-size 0.7s ease,
+    line-height 0.7s ease,
+    letter-spacing 0.7s ease,
+    word-spacing 0.7s ease,
+    max-inline-size 0.7s ease,
+    background-color 0.7s ease,
+    color 0.7s ease;
+}
+
+/* Arabic is cursive: spacing letters apart breaks the joins. Enforced here
+   as well as in the presets, so no style can ever reintroduce it. */
+.reader-text[lang='ar'] {
+  letter-spacing: 0 !important;
+  font-feature-settings: 'liga', 'calt';
+}
+
+.reader-text h1 {
+  font-size: 1.3em;
+  line-height: 1.4;
+  margin-block-end: 1em;
+}
+.reader-text p {
+  margin-block: 0 var(--rd-para);
+  padding: 0.15em 0.5em;
+  border-inline-start: 4px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    opacity 0.5s ease,
+    border-color 0.3s ease,
+    margin 0.7s ease;
+}
+.reader-text p.is-active {
+  border-inline-start-color: var(--brand);
+  cursor: default;
+}
+
+.reader-text[data-focus='paragraph'] p:not(.is-active),
+.reader-text[data-focus='line-guide'] p:not(.is-active) {
+  opacity: 0.4;
+}
+/* Alternate bands, one per line of text, to help the eye find the next line. */
+.reader-text[data-focus='line-guide'] p.is-active {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 1lh,
+    color-mix(in srgb, var(--rd-fg) 8%, transparent) 1lh 2lh
+  );
+  background-position: 0 0.15em;
+}
+
+.reader-text[data-theme='dusk'] {
+  --syl-a: #8ec5ff;
+  --syl-b: #ffb3d1;
+}
+.reader-text[data-contrast='high'] {
+  font-weight: 500;
+}
+.syl-a {
+  color: var(--syl-a);
+}
+.syl-b {
+  color: var(--syl-b);
+}
+
+.reader-nav {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.7rem 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-block-start: 1px solid var(--line);
+}
+.reader-nav .btn {
+  min-inline-size: 8rem;
+  font-size: 1.1rem;
+}
+
+.toast {
+  position: fixed;
+  inset-block-end: 5.2rem;
+  inset-inline: 0;
+  margin-inline: auto;
+  inline-size: min(40rem, calc(100vw - 1.5rem));
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  background: #14202b;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+.toast > span {
+  flex: 1 1 14rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: grid;
+  place-items: center;
+  background: rgba(20, 32, 43, 0.82);
+  padding: 1rem;
+}
+.overlay-card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  max-inline-size: 26rem;
+}
+
+@media (max-width: 40rem) {
+  .reader-bar {
+    flex-wrap: wrap;
+  }
+  .reader-text {
+    font-size: calc(1.15rem * var(--rd-size));
+    margin-block: 0.75rem;
+    border-radius: 0;
+  }
+  .panel-row > span:first-child {
+    min-inline-size: 100%;
+  }
+  .reader-nav .btn {
+    min-inline-size: 6rem;
+  }
+}
